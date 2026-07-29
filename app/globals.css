@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0b0a1a;
-  --royal: #1e1b4b;
-  --plum: #3b1e54;
-  --champagne: #d4af6a;
-  --champagne-soft: #e5c98a;
-  --pearl: #f4f1e9;
-  --mist: #a9a4c4;
+  /* Bright, light-first "royal" palette. Token names describe each
+     color's hue family (ink = deep indigo, pearl = bright ivory), not
+     literal darkness — ink is the text color, pearl is the page surface. */
+  --ink: #1c1836;
+  --royal: #2c2768;
+  --plum: #4a2a6b;
+  --champagne: #96731f;
+  --champagne-soft: #b58f3a;
+  --pearl: #fbf8f2;
+  --pearl-dim: #f2ecdf;
+  --mist: #635e80;
 
-  --background: var(--ink);
-  --foreground: var(--pearl);
+  --background: var(--pearl);
+  --foreground: var(--ink);
 }
 
 @theme inline {
@@ -56,7 +60,7 @@ body {
 }
 
 ::selection {
-  background: var(--champagne);
+  background: var(--champagne-soft);
   color: var(--ink);
 }
 
@@ -72,7 +76,7 @@ body {
   left: 1rem;
   top: -4rem;
   z-index: 100;
-  background: var(--champagne);
+  background: var(--champagne-soft);
   color: var(--ink);
   padding: 0.75rem 1.25rem;
   border-radius: 0.375rem;

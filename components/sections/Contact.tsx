@@ -9,7 +9,7 @@ export function Contact() {
     <section id="contact" aria-label="Contact" className="mx-auto max-w-6xl px-6 py-28">
       <Reveal>
         <p className="eyebrow">Contact</p>
-        <h2 className="font-display mt-4 max-w-xl text-balance text-4xl text-pearl sm:text-5xl">
+        <h2 className="font-display mt-4 max-w-xl text-balance text-4xl text-ink sm:text-5xl">
           Let&rsquo;s build something.
         </h2>
         <p className="mt-5 max-w-lg text-lg text-mist">

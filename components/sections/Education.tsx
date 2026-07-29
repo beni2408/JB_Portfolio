@@ -18,7 +18,7 @@ export function Education() {
             <ul className="mt-6 space-y-6">
               {education.map((entry) => (
                 <li key={entry.institution}>
-                  <p className="font-display text-lg text-pearl">{entry.degree}</p>
+                  <p className="font-display text-lg text-ink">{entry.degree}</p>
                   <p className="mt-1 text-sm text-mist">{entry.institution}</p>
                   <p className="font-mono-tag mt-1 text-xs text-mist">{entry.dates}</p>
                 </li>
@@ -33,7 +33,7 @@ export function Education() {
             <ul className="mt-6 space-y-6">
               {certifications.map((cert) => (
                 <li key={cert.name}>
-                  <p className="font-display text-lg text-pearl">
+                  <p className="font-display text-lg text-ink">
                     {cert.name}
                     {cert.featured && (
                       <span className="ml-2 rounded-full border border-champagne/50 px-2 py-0.5 text-xs font-sans text-champagne align-middle">

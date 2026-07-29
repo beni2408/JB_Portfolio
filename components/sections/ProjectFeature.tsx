@@ -7,7 +7,7 @@ import type { Project } from "@/data/projects";
 export function ProjectFeature({ project, index }: { project: Project; index: number }) {
   return (
     <Reveal delay={index * 0.08}>
-      <article className="grid gap-8 rounded-2xl border border-royal/60 bg-linear-to-br from-royal/30 via-ink to-ink p-8 sm:p-10 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
+      <article className="grid gap-8 rounded-2xl border border-royal/20 bg-linear-to-br from-royal/10 via-pearl to-pearl p-8 sm:p-10 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
         <div>
           <div className="flex flex-wrap items-center gap-3">
             <p className="font-mono-tag text-xs tracking-wide text-mist">{project.dates}</p>
@@ -19,7 +19,7 @@ export function ProjectFeature({ project, index }: { project: Project; index: nu
             )}
           </div>
 
-          <h3 className="font-display mt-3 text-2xl text-pearl sm:text-3xl">{project.title}</h3>
+          <h3 className="font-display mt-3 text-2xl text-ink sm:text-3xl">{project.title}</h3>
 
           <p className="mt-4 max-w-xl text-mist">{project.summary}</p>
 
@@ -38,7 +38,7 @@ export function ProjectFeature({ project, index }: { project: Project; index: nu
                 href={project.liveHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-champagne px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-champagne-soft"
+                className="inline-flex items-center gap-2 rounded-full bg-champagne-soft px-5 py-2.5 text-sm font-medium text-ink transition-[filter] hover:brightness-90"
               >
                 Visit live site <ExternalLink size={15} />
               </a>
@@ -48,7 +48,7 @@ export function ProjectFeature({ project, index }: { project: Project; index: nu
                 href={project.githubHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-medium text-pearl transition-colors hover:text-champagne"
+                className="inline-flex items-center gap-2 text-sm font-medium text-ink transition-colors hover:text-champagne"
               >
                 <GithubIcon size={16} /> View source
               </a>

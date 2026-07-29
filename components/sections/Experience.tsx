@@ -6,12 +6,12 @@ export function Experience() {
     <section id="experience" aria-label="Experience" className="mx-auto max-w-6xl px-6 py-28">
       <Reveal>
         <p className="eyebrow">Experience</p>
-        <h2 className="font-display mt-4 max-w-xl text-balance text-3xl text-pearl sm:text-4xl">
+        <h2 className="font-display mt-4 max-w-xl text-balance text-3xl text-ink sm:text-4xl">
           Where the work has happened
         </h2>
       </Reveal>
 
-      <ol className="mt-16 space-y-16 border-l border-royal/60 pl-8 sm:pl-10">
+      <ol className="mt-16 space-y-16 border-l border-royal/30 pl-8 sm:pl-10">
         {experience.map((entry, index) => (
           <Reveal as="li" key={entry.company} delay={index * 0.08} className="relative">
             <span
@@ -19,7 +19,7 @@ export function Experience() {
               aria-hidden="true"
             />
             <p className="font-mono-tag text-xs tracking-wide text-mist">{entry.dates}</p>
-            <h3 className="font-display mt-2 text-xl text-pearl sm:text-2xl">
+            <h3 className="font-display mt-2 text-xl text-ink sm:text-2xl">
               {entry.role} · {entry.company}
             </h3>
             {entry.client && (

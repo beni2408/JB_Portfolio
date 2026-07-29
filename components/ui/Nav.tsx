@@ -38,7 +38,7 @@ export function Nav() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-royal/60 bg-ink/80 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-royal/15 bg-pearl/85 backdrop-blur-md">
       <a href="#main" className="skip-link">
         Skip to content
       </a>
@@ -48,7 +48,7 @@ export function Nav() {
       >
         <Link
           href="#top"
-          className="font-display text-xl tracking-wide text-pearl"
+          className="font-display text-xl tracking-wide text-ink"
           aria-label={`${profile.name} — home`}
         >
           JB<span className="text-champagne">.</span>
@@ -62,7 +62,7 @@ export function Nav() {
                 className={`text-sm tracking-wide transition-colors ${
                   active === link.href.slice(1)
                     ? "text-champagne"
-                    : "text-mist hover:text-pearl"
+                    : "text-mist hover:text-ink"
                 }`}
                 aria-current={active === link.href.slice(1) ? "true" : undefined}
               >
@@ -90,7 +90,7 @@ export function Nav() {
 
         <button
           type="button"
-          className="p-2 text-pearl md:hidden"
+          className="p-2 text-ink md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -101,7 +101,7 @@ export function Nav() {
       </nav>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-royal/60 bg-ink px-6 py-6 md:hidden">
+        <div id="mobile-menu" className="border-t border-royal/15 bg-pearl px-6 py-6 md:hidden">
           <ul className="flex flex-col gap-4">
             {links.map((link) => (
               <li key={link.href}>

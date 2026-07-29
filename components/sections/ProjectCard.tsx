@@ -32,11 +32,11 @@ export function ProjectCard({ project }: { project: Project }) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="h-full rounded-xl border border-royal/60 bg-royal/10 p-6 transition-[transform,border-color] duration-200 ease-out hover:border-champagne/60"
+      className="h-full rounded-xl border border-royal/20 bg-royal/5 p-6 transition-[transform,border-color] duration-200 ease-out hover:border-champagne/60"
       style={{ transformStyle: "preserve-3d" }}
     >
       <p className="font-mono-tag text-xs tracking-wide text-mist">{project.dates}</p>
-      <h3 className="font-display mt-2 text-xl text-pearl">{project.title}</h3>
+      <h3 className="font-display mt-2 text-xl text-ink">{project.title}</h3>
       <p className="mt-3 text-sm text-mist">{project.summary}</p>
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -53,7 +53,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-pearl transition-colors hover:text-champagne"
+              className="inline-flex items-center gap-2 text-sm font-medium text-ink transition-colors hover:text-champagne"
             >
               <GithubIcon size={15} /> {link.label}
             </a>

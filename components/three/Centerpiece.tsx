@@ -80,7 +80,7 @@ export function Centerpiece({ pointer, scrollProgress }: CenterpieceProps) {
       </mesh>
       <mesh ref={ringB} rotation={[Math.PI / 3.2, Math.PI / 6, 0]}>
         <torusGeometry args={[CORE_RADIUS * 2, 0.005, 16, 120]} />
-        <meshBasicMaterial color="#f4f1e9" transparent opacity={0.35} toneMapped={false} />
+        <meshBasicMaterial color="#2c2768" transparent opacity={0.4} toneMapped={false} />
       </mesh>
     </group>
   );

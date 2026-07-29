@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="14" fill="#0B0A1A" />
-  <rect width="64" height="64" rx="14" fill="url(#g)" fill-opacity="0.5" />
+  <rect width="64" height="64" rx="14" fill="#FBF8F2" />
+  <rect width="64" height="64" rx="14" fill="url(#g)" fill-opacity="0.35" />
   <text
     x="32"
     y="42"
     text-anchor="middle"
     font-family="Georgia, 'Times New Roman', serif"
     font-size="28"
-    fill="#F4F1E9"
-  >JB<tspan fill="#D4AF6A">.</tspan></text>
+    fill="#1C1836"
+  >JB<tspan fill="#96731F">.</tspan></text>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#3B1E54" />
-      <stop offset="1" stop-color="#1E1B4B" />
+      <stop stop-color="#EAE0F0" />
+      <stop offset="1" stop-color="#F2ECDF" />
     </linearGradient>
   </defs>
 </svg>

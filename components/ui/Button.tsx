@@ -17,9 +17,9 @@ const base =
   "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition-colors duration-200";
 
 const variants: Record<NonNullable<BaseProps["variant"]>, string> = {
-  solid: "bg-champagne text-ink hover:bg-champagne-soft",
+  solid: "bg-champagne-soft text-ink hover:brightness-90",
   outline: "border border-champagne text-champagne hover:bg-champagne/10",
-  ghost: "text-pearl hover:text-champagne",
+  ghost: "text-ink hover:text-champagne",
 };
 
 export function Button({ children, variant = "solid", className = "", ...rest }: ButtonProps) {

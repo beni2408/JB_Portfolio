@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  themeColor: "#0b0a1a",
+  themeColor: "#fbf8f2",
 };
 
 const jsonLd = {
@@ -85,7 +85,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${geistSans.variable} ${geistMono.variable}`}>
-      <body className="bg-ink text-pearl antialiased">
+      <body className="bg-pearl text-ink antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
