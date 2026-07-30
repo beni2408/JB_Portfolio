@@ -1,30 +1,36 @@
 import Image from "next/image";
 import { Reveal } from "@/components/ui/Reveal";
+import { Parallax } from "@/components/ui/Parallax";
+import { ParallaxBackdrop } from "@/components/ui/ParallaxBackdrop";
 import { profile } from "@/data/profile";
 
 export function About() {
   return (
-    <section id="about" aria-label="About" className="mx-auto max-w-6xl px-6 py-28">
+    <section id="about" aria-label="About" className="relative isolate mx-auto max-w-6xl px-6 py-28">
+      <ParallaxBackdrop align="right" />
+
       <Reveal>
         <p className="eyebrow">About</p>
       </Reveal>
 
       <div className="mt-6 grid gap-10 md:grid-cols-[200px_1fr] md:items-start md:gap-14">
         <Reveal>
-          <div className="relative w-fit">
-            <div
-              className="absolute -inset-3 rounded-3xl border border-champagne/40"
-              aria-hidden="true"
-            />
-            <Image
-              src="/profile_pic.png"
-              alt="Portrait of Jascar Benish P"
-              width={200}
-              height={200}
-              className="relative rounded-2xl object-cover shadow-[0_20px_45px_-20px_rgba(28,24,54,0.35)]"
-              priority
-            />
-          </div>
+          <Parallax distance={36}>
+            <div className="relative w-fit">
+              <div
+                className="absolute -inset-3 rounded-3xl border border-champagne/40"
+                aria-hidden="true"
+              />
+              <Image
+                src="/profile_pic.png"
+                alt="Portrait of Jascar Benish P"
+                width={200}
+                height={200}
+                className="relative rounded-2xl object-cover shadow-[0_20px_45px_-20px_rgba(28,24,54,0.35)]"
+                priority
+              />
+            </div>
+          </Parallax>
         </Reveal>
 
         <div>

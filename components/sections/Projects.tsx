@@ -1,11 +1,17 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { ParallaxBackdrop } from "@/components/ui/ParallaxBackdrop";
 import { ProjectCard } from "@/components/sections/ProjectCard";
 import { ProjectFeature } from "@/components/sections/ProjectFeature";
 import { flagshipProjects, otherProjects } from "@/data/projects";
 
 export function Projects() {
   return (
-    <section id="projects" aria-label="Featured projects" className="mx-auto max-w-6xl px-6 py-28">
+    <section
+      id="projects"
+      aria-label="Featured projects"
+      className="relative isolate mx-auto max-w-6xl px-6 py-28"
+    >
+      <ParallaxBackdrop align="right" />
       <Reveal>
         <p className="eyebrow">Featured Projects</p>
         <h2 className="font-display mt-4 max-w-xl text-balance text-3xl text-ink sm:text-4xl">

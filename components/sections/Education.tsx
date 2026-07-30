@@ -1,11 +1,17 @@
 import { ExternalLink } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
+import { ParallaxBackdrop } from "@/components/ui/ParallaxBackdrop";
 import { certifications, education } from "@/data/education";
 
 export function Education() {
   return (
-    <section id="education" aria-label="Education and certifications" className="bg-royal/10 py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <section
+      id="education"
+      aria-label="Education and certifications"
+      className="relative isolate bg-royal/10 py-28"
+    >
+      <ParallaxBackdrop align="right" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <Reveal>
           <p className="eyebrow">Education &amp; Certifications</p>
         </Reveal>

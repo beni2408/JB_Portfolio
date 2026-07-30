@@ -1,9 +1,16 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { ParallaxBackdrop } from "@/components/ui/ParallaxBackdrop";
+import { TimelineSpine } from "@/components/sections/TimelineSpine";
 import { experience } from "@/data/experience";
 
 export function Experience() {
   return (
-    <section id="experience" aria-label="Experience" className="mx-auto max-w-6xl px-6 py-28">
+    <section
+      id="experience"
+      aria-label="Experience"
+      className="relative isolate mx-auto max-w-6xl px-6 py-28"
+    >
+      <ParallaxBackdrop align="left" />
       <Reveal>
         <p className="eyebrow">Experience</p>
         <h2 className="font-display mt-4 max-w-xl text-balance text-3xl text-ink sm:text-4xl">
@@ -11,7 +18,7 @@ export function Experience() {
         </h2>
       </Reveal>
 
-      <ol className="mt-16 space-y-16 border-l border-royal/30 pl-8 sm:pl-10">
+      <TimelineSpine>
         {experience.map((entry, index) => (
           <Reveal as="li" key={entry.company} delay={index * 0.08} className="relative">
             <span
@@ -51,7 +58,7 @@ export function Experience() {
             </ul>
           </Reveal>
         ))}
-      </ol>
+      </TimelineSpine>
     </section>
   );
 }

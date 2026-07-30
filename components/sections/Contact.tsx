@@ -2,11 +2,17 @@ import { Mail, MessageCircle } from "lucide-react";
 import { GithubIcon } from "@/components/ui/icons";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { ParallaxBackdrop } from "@/components/ui/ParallaxBackdrop";
 import { profile } from "@/data/profile";
 
 export function Contact() {
   return (
-    <section id="contact" aria-label="Contact" className="mx-auto max-w-6xl px-6 py-28">
+    <section
+      id="contact"
+      aria-label="Contact"
+      className="relative isolate mx-auto max-w-6xl px-6 py-28"
+    >
+      <ParallaxBackdrop align="left" />
       <Reveal>
         <p className="eyebrow">Contact</p>
         <h2 className="font-display mt-4 max-w-xl text-balance text-4xl text-ink sm:text-5xl">

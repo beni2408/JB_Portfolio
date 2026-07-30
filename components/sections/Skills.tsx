@@ -1,11 +1,13 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { ParallaxBackdrop } from "@/components/ui/ParallaxBackdrop";
 import { skillGroups } from "@/data/skills";
 import { skillIcons } from "@/components/sections/skillIcons";
 
 export function Skills() {
   return (
-    <section id="skills" aria-label="Skills" className="bg-royal/10 py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="skills" aria-label="Skills" className="relative isolate bg-royal/10 py-28">
+      <ParallaxBackdrop align="left" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <Reveal>
           <p className="eyebrow">Skills</p>
           <h2 className="font-display mt-4 max-w-xl text-balance text-3xl text-ink sm:text-4xl">

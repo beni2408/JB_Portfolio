@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/ui/icons";
+import { Parallax } from "@/components/ui/Parallax";
 import { Reveal } from "@/components/ui/Reveal";
 import { Tag } from "@/components/ui/Tag";
 import type { Project } from "@/data/projects";
@@ -56,11 +57,13 @@ export function ProjectFeature({ project, index }: { project: Project; index: nu
           </div>
         </div>
 
-        <div className="flex flex-wrap content-start gap-2 lg:justify-end">
-          {project.stack.map((tech) => (
-            <Tag key={tech}>{tech}</Tag>
-          ))}
-        </div>
+        <Parallax distance={-28} className="lg:pt-2">
+          <div className="flex flex-wrap content-start gap-2 lg:justify-end">
+            {project.stack.map((tech) => (
+              <Tag key={tech}>{tech}</Tag>
+            ))}
+          </div>
+        </Parallax>
       </article>
     </Reveal>
   );

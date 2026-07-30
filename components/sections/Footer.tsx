@@ -7,11 +7,15 @@ const links = [
   { href: "#contact", label: "Contact" },
 ];
 
-export function Footer() {
+export function Footer({ className = "" }: { className?: string }) {
   return (
-    <footer className="border-t border-royal/20">
+    <footer className={`border-t border-royal/20 ${className}`}>
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-12 text-center sm:flex-row sm:justify-between sm:text-left">
-        <Link href="#top" className="font-display text-lg text-ink" aria-label={`${profile.name} — back to top`}>
+        <Link
+          href="#top"
+          className="font-display text-lg text-ink"
+          aria-label={`JB. — ${profile.name}, back to top`}
+        >
           JB<span className="text-champagne">.</span>
         </Link>
 

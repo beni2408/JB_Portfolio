@@ -1,3 +1,4 @@
+import { BackdropCanvas } from "@/components/three/BackdropCanvas";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
@@ -10,7 +11,9 @@ import { Footer } from "@/components/sections/Footer";
 export default function Home() {
   return (
     <>
-      <main id="main">
+      {/* Fixed page-wide 3D parallax layer; content sits above it via z-10. */}
+      <BackdropCanvas />
+      <main id="main" className="relative z-10">
         <Hero />
         <About />
         <Skills />
@@ -19,7 +22,7 @@ export default function Home() {
         <Education />
         <Contact />
       </main>
-      <Footer />
+      <Footer className="relative z-10" />
     </>
   );
 }

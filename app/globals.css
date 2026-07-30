@@ -7,8 +7,13 @@
   --ink: #1c1836;
   --royal: #2c2768;
   --plum: #4a2a6b;
-  --champagne: #96731f;
-  --champagne-soft: #b58f3a;
+  /* Deep antique gold. Dark enough to clear AA against the *compound* worst
+     case — section tint + crystal fill + a gold cage edge all stacked behind it
+     (8.52:1 on plain pearl, 4.98:1 at worst). See scripts/verify-contrast.mjs. */
+  --champagne: #5f4416;
+  /* Light gold, used as a BACKGROUND under ink text (buttons). Must stay bright
+     enough that ink clears AA even after the hover brightness-90: 7.4:1 / 6.0:1. */
+  --champagne-soft: #c9a758;
   --pearl: #fbf8f2;
   --pearl-dim: #f2ecdf;
   --mist: #635e80;

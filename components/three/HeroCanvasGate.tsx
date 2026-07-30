@@ -1,8 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
-import { useReducedMotion } from "@/lib/useReducedMotion";
+import { use3DCapability } from "@/lib/use3DCapability";
 import { HeroFallback } from "./fallback";
 
 const HeroScene = dynamic(() => import("./HeroScene").then((mod) => mod.HeroScene), {
@@ -11,17 +10,9 @@ const HeroScene = dynamic(() => import("./HeroScene").then((mod) => mod.HeroScen
 });
 
 export function HeroCanvasGate() {
-  const reducedMotion = useReducedMotion();
-  const [canRender3D, setCanRender3D] = useState(false);
+  const canRender3D = use3DCapability();
 
-  useEffect(() => {
-    const isSmallViewport = window.innerWidth < 768;
-    const isLowEndDevice =
-      typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
-    setCanRender3D(!isSmallViewport && !isLowEndDevice);
-  }, []);
-
-  if (reducedMotion || !canRender3D) {
+  if (!canRender3D) {
     return <HeroFallback />;
   }
 

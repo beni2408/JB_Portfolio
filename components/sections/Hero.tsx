@@ -40,12 +40,12 @@ export function Hero() {
             Full-Stack Developer &amp; Composer
           </motion.p>
 
-          <motion.h1
-            variants={item}
-            className="font-display mt-4 text-balance text-5xl leading-[1.05] text-ink sm:text-6xl lg:text-6xl"
-          >
+          {/* Not part of the stagger group: this is the LCP element, so it must
+              paint immediately from the server-rendered HTML rather than wait
+              on JS hydration to flip an initial opacity:0 to visible. */}
+          <h1 className="font-display mt-4 text-balance text-5xl leading-[1.05] text-ink sm:text-6xl lg:text-6xl">
             {profile.name}
-          </motion.h1>
+          </h1>
 
           <motion.p variants={item} className="mt-5 text-lg text-mist sm:text-xl">
             {profile.roleLine}

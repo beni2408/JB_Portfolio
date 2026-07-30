@@ -49,7 +49,7 @@ export function Nav() {
         <Link
           href="#top"
           className="font-display text-xl tracking-wide text-ink"
-          aria-label={`${profile.name} — home`}
+          aria-label={`JB. — ${profile.name}, home`}
         >
           JB<span className="text-champagne">.</span>
         </Link>
