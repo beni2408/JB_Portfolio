@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  # The Next.js runtime consumes .next directly; it is not a plain static dir.
+  publish = ".next"
+
+[build.environment]
+  # Next.js 15 requires Node >= 18.18. Pinning avoids inheriting whatever
+  # default the build image ships with.
+  NODE_VERSION = "20"
+
+# Netlify auto-detects Next.js and installs this, but declaring it keeps the
+# build reproducible rather than dependent on detection.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

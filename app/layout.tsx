@@ -5,6 +5,7 @@ import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvide
 import { Nav } from "@/components/ui/Nav";
 import { profile } from "@/data/profile";
 import { skillGroups } from "@/data/skills";
+import { siteUrl } from "@/lib/siteUrl";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -22,8 +23,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-const siteUrl = "https://jascarbenish.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
