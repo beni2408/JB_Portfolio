@@ -49,8 +49,14 @@
   --text-6xl: 6rem;
 }
 
-* {
-  border-color: var(--royal);
+/* Default border colour for elements that set a width but no colour.
+   MUST stay inside @layer base: unlayered CSS outranks Tailwind's utilities
+   layer, so at top level this silently overrode every `border-*` utility on
+   the site (border-champagne, border-royal/20, …) with full-strength royal. */
+@layer base {
+  * {
+    border-color: var(--royal);
+  }
 }
 
 html {
