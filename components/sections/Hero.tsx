@@ -1,6 +1,9 @@
 "use client";
 
-import { motion, useReducedMotion as useFramerReducedMotion } from "framer-motion";
+import {
+  motion,
+  useReducedMotion as useFramerReducedMotion,
+} from "framer-motion";
 import { Mail, MessageCircle } from "lucide-react";
 import { GithubIcon } from "@/components/ui/icons";
 import { HeroCanvasGate } from "@/components/three/HeroCanvasGate";
@@ -14,7 +17,11 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 18 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
+  },
 };
 
 export function Hero() {
@@ -47,11 +54,17 @@ export function Hero() {
             {profile.name}
           </h1>
 
-          <motion.p variants={item} className="mt-5 text-lg text-mist sm:text-xl">
+          <motion.p
+            variants={item}
+            className="mt-5 text-lg text-mist sm:text-xl"
+          >
             {profile.roleLine}
           </motion.p>
 
-          <motion.p variants={item} className="mt-4 max-w-md text-balance text-base text-mist">
+          <motion.p
+            variants={item}
+            className="mt-4 max-w-md text-balance text-base text-mist"
+          >
             {profile.valueProp}
           </motion.p>
 
@@ -95,8 +108,8 @@ export function Hero() {
       </div>
 
       <span className="sr-only">
-        Decorative rotating 3D crystalline centerpiece representing the intersection of code and
-        music.
+        Decorative rotating 3D crystalline centerpiece representing the
+        intersection of code and music.
       </span>
     </section>
   );

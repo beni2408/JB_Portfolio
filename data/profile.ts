@@ -14,7 +14,7 @@ export const profile = {
     "Trained in music theory (Grade 5, Trinity College London) and active as a composer, audio engineer, and creative coordinator for a choir ministry — a background that shows up as care for detail, timing, and polish in the products he ships.",
   ],
   stats: [
-    { label: "Building full-stack products", value: "2+ yrs" },
+    { label: "Building full-stack products", value: "1 yr" },
     { label: "Shipped products", value: "5+" },
     { label: "Flagship platforms", value: "Live in production" },
     { label: "Full-Stack Dev with AI, certified", value: "IIT-M Pravartak" },
