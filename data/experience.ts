@@ -14,7 +14,7 @@ export const experience: ExperienceEntry[] = [
 
     role: "MERN-Stack Developer",
     dates: "Apr 2026 – Present",
-    location: "Remote · Chennai, India",
+    location: "Remote",
     website: "https://www.lyntxglobal.com/",
     bullets: [
       "Build and maintain full-stack web applications across the MERN stack (MongoDB, Express.js, React.js, Node.js) and SvelteKit for client-facing platforms.",
