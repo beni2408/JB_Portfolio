@@ -10,8 +10,8 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    company: "NextGen Global Solutions",
-    client: "LyntX Global Solutions",
+    company: "Lynt-X Global",
+
     role: "MERN-Stack Developer",
     dates: "Apr 2026 – Present",
     location: "Remote · Chennai, India",
